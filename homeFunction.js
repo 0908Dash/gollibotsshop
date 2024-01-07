@@ -16,13 +16,23 @@ document.addEventListener("DOMContentLoaded", function () {
         // If logged in, update the dashboard item to show
         dashboardNavItem.style.display = "list-item";
 
-        // Update the user item to show the profile picture and settings
-        userNavItem.innerHTML = `<a href="#"><img src="${user.profilePicture}" alt="Profile Picture"></a><div id="settings">Settings</div>`;
+        // Update the user item to show the profile picture and settings dropdown
+        userNavItem.innerHTML = `
+            <div class="dropdown">
+                <a href="#" id="userDropdown">
+                    <img src="${user.profilePicture}" alt="Profile Picture" id="profilePicture">
+                </a>
+                <div class="dropdown-content" id="userDropdownContent">
+                    <a href="#" id="settingsLink">Settings</a>
+                    <a href="#" id="logoutLink">Logout</a>
+                </div>
+            </div>
+        `;
     } else {
         // If not logged in, hide the dashboard item
         dashboardNavItem.style.display = "none";
 
-        // Update the user item to show the login link
+        // Update the user item to show a login link
         userNavItem.innerHTML = `<a href="./pages/login.html">Login</a>`;
     }
 });
