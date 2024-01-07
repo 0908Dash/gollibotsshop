@@ -10,13 +10,22 @@
       <h1><img src="./favicon.png" alt="GolliCRAFT Logo"><id id="spacingH1">..................................</id>GolliBot's Item Shop</h1>
       <div class="navigation">
         <ul>
-          <li class="menu"><a href="#">Home</a></li>
-          <li class="menu"><a href="./pages/itemshop.html">Item Shop</a></li>
-          <li class="menu" id="dashboard"><a href="./pages/dashboard.html">Dashboard</a></li>
-          <li class="menu"><a href="https://www.gollicraft.com">GolliCRAFT Site</a></li>
-          <li class="menu" id="user"><a href="./pages/login.html">Login</a></li>
+            <li class="menu"><a href="#">Home</a></li>
+            <li class="menu"><a href="./pages/itemshop.html">Item Shop</a></li>
+            <li class="menu" id="dashboard"><a href="./pages/dashboard.html">Dashboard</a></li>
+            <li class="menu"><a href="https://www.gollicraft.com">GolliCRAFT Site</a></li>
+            <li class="menu" id="user">
+                <!-- Update this to include a dropdown menu when logged in -->
+                <a href="#" id="userDropdown">
+                    <img src="path/to/default-profile.jpg" alt="Profile Picture" id="profilePicture">
+                </a>
+                <div class="dropdown-content" id="userDropdownContent">
+                    <a href="#" id="settingsLink">Settings</a>
+                    <a href="#" id="logoutLink">Logout</a>
+                </div>
+            </li>
         </ul>
-      </div>
+    </div>
     </div>
   </body>
   <script src="./homeFunction.js"></script>
