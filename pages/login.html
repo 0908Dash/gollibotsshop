@@ -1,1 +1,25 @@
+<!-- login.html -->
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Your CSS link goes here -->
+</head>
+<body>
+    <h1>Login</h1>
+    <button onclick="loginWithDiscord()">Login with Discord</button>
+    <button onclick="loginWithMicrosoft()">Login with Microsoft</button>
+    <button onclick="loginWithGoogle()">Login with Google</button>
+    <!-- Your traditional login form goes here -->
+    <form id="traditionalLoginForm">
+        <!-- Your form fields go here -->
+        <input type="text" name="username" placeholder="Username or Email">
+        <input type="password" name="password" placeholder="Password">
+        <button type="submit">Login</button>
+    </form>
+    <script src="./loginFunction.js"></script>
+</body>
+</html>
