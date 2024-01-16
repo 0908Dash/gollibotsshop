@@ -2,7 +2,7 @@
 
 function loginWithDiscord() {
     // Redirect to Discord OAuth login page
-    window.location.href = 'your-discord-oauth-url';
+    window.location.href = 'https://discord.com/api/oauth2/authorize?client_id=1156597666680160376&response_type=code&redirect_uri=https%3A%2F%2Fgollibot.gollicraft.com%2Fauth%2Fcallback%2Findex.html&scope=identify+email+connections+guilds';
 }
 
 // Add event listener to traditional login form
