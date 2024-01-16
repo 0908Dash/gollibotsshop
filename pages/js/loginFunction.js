@@ -5,16 +5,6 @@ function loginWithDiscord() {
     window.location.href = 'your-discord-oauth-url';
 }
 
-function loginWithMicrosoft() {
-    // Redirect to Microsoft OAuth login page
-    window.location.href = 'your-microsoft-oauth-url';
-}
-
-function loginWithGoogle() {
-    // Redirect to Google OAuth login page
-    window.location.href = 'your-google-oauth-url';
-}
-
 // Add event listener to traditional login form
 document.getElementById('traditionalLoginForm').addEventListener('submit', function (event) {
     event.preventDefault();
