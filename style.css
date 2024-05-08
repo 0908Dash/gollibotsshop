@@ -85,20 +85,6 @@ body {
     color: #265714;
 }
 
-.loadingAnimation {
-    border: 4px solid rgba(255, 255, 255, 0.3);
-    border-top: 4px solid #fffb40;
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    animation: spin 5s linear infinite;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
 .dropdown {
     position: relative;
     display: inline-block;
@@ -122,6 +108,68 @@ body {
 
 .dropdown-content a:hover {
     background-color: #f1f1f1;
+}
+
+/* Grid layout for Daily Items and Weekly Items */
+.dailyList, .weeklyList {
+    margin: 40px auto;
+    width: 100%; /* Adjust the width as needed */
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+    justify-content: center; /* Center the grid horizontally */
+}
+
+.bigCard, .smallCard {
+    border-radius: 25px;
+    height: 420px;
+    width: 200px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.image {
+    height: 100px;
+    width: 100px;
+}
+
+.itemName {
+    font-weight: bold;
+}
+
+.price, .irlPrice {
+    margin: 0;
+}
+
+#spacing {
+    color: white;
+}
+
+#dailyRefreshTime, #weeklyRefreshTime {
+    color: #265714;
+}
+
+ul {
+    list-style-type: none
+}
+
+.loadingAnimation {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top: 4px solid #fffb40;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 .dropdown:hover #userDropdownContent {
