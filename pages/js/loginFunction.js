@@ -25,7 +25,7 @@ document.getElementById('LoginForm').addEventListener('submit', async function (
         const result = await response.text();
         console.log(result); // For debugging, you can replace this with appropriate UI handling
         alert('Login successful'); // Example: Display a success message
-        window.location.href = '/dashboard'; // Redirect to dashboard or another page
+        window.location.href = '../index.html'; // Redirect to dashboard or another page
     } catch (error) {
         console.error('Error during login:', error);
         alert('Failed to login. Please check your credentials and try again.');
